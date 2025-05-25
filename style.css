@@ -97,9 +97,20 @@ section {
     gap: 5rem;
 }
 
-.home-detail {
-    /*margin-left: 90px;*/
+.home1 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
 }
+
+/* Smooth fade-in with upward slide */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .home-detail h1 {
     font-size: clamp(3.5rem, 45vw, 5.8rem);
     font-family: "Times New Roman" , "serif";
